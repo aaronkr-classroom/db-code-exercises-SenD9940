@@ -54,13 +54,13 @@
  - registered_at DATE
  - un_registered_at DATE
 
-INSERT INTO mall (email, password, name, status, registered_at) VALUES (’dnqlsdnqls529@naver.com’, ‘encrypted_password’, ‘우빈샵’, ‘ACTIVE’, ‘2026-03-30’);
-SELECT name, email, status FROM mall WHERE status = ‘ACTIVE’ ORDER BY name ASC;
-UPDATE mall SET name = ‘우빈샵 리뉴얼' WHERE email = ‘dnqlsdnqls529@naver.com’;
-INSERT INTO product (mall_id, name, thumbnail_url, price, status, registered_at) VALUES (1, ‘프리미엄 후드티’, ‘image_url’, 59000, 'ON_SALE',  ‘2026-03-30’);
-SELECT name, price, status FROM product WHERE email = 'dnqlsdnqls529@naver.com' AND status = ‘ON_SALE’ ORDER BY price DESC;
-UPDATE product SET status = 'SOLD_OUT' WHERE id = 10;
-INSERT INTO purchase (mall_id, product_id, user_id, purchase_price, purchased_at) VALUES (1, 10, 5, 59000, ‘2026-03-30’);
+INSERT INTO mall (email, password, name, status, registered_at) VALUES (’dnqlsdnqls529@naver.com’, ‘encrypted_password’, ‘우빈샵’, ‘ACTIVE’, ‘2026-03-30’); <br>
+SELECT name, email, status FROM mall WHERE status = ‘ACTIVE’ ORDER BY name ASC; <br>
+UPDATE mall SET name = ‘우빈샵 리뉴얼' WHERE email = ‘dnqlsdnqls529@naver.com’; <br>
+INSERT INTO product (mall_id, name, thumbnail_url, price, status, registered_at) VALUES (1, ‘프리미엄 후드티’, ‘image_url’, 59000, 'ON_SALE',  ‘2026-03-30’); <br>
+SELECT name, price, status FROM product WHERE email = 'dnqlsdnqls529@naver.com' AND status = ‘ON_SALE’ ORDER BY price DESC; <br>
+UPDATE product SET status = 'SOLD_OUT' WHERE id = 10; <br>
+INSERT INTO purchase (mall_id, product_id, user_id, purchase_price, purchased_at) VALUES (1, 10, 5, 59000, ‘2026-03-30’); <br>
 
 # 3장 연습문제
 
@@ -69,10 +69,10 @@ INSERT INTO purchase (mall_id, product_id, user_id, purchase_price, purchased_at
 **가로**
 2 전체 업무를 요구 분석의 기본 단위가 되는 소단위의 업무 영역으로 분훌녕H서 계층구조 형태로 표현한 그림 - 업무영역분할도 <br>
 4 DB를 구축하기 위해서 사용자가요구하는 DB의 용도를 따g댄여 요구사항을 수집한 다음 체계적으로 정리하고 요익받
-문서
-5 응답자가 예/아니요 또는 다지선다형 또는 단답형으로 답할 수 있는 질문 - 닫힌질문
-7 하나의 논리적 기능을 수행하기 위한 ξ업 단위 - 트랜잭션
-8 사용자의 요구사항을 수집하기 위해 가장 흔하고 쉽게 사용하는 방법으로， 다양한 유형의 질문을 적재적소에 시용해야 함 - 인터뷰
+문서 <br>
+5 응답자가 예/아니요 또는 다지선다형 또는 단답형으로 답할 수 있는 질문 - 닫힌질문 <br>
+7 하나의 논리적 기능을 수행하기 위한 ξ업 단위 - 트랜잭션 <br>
+8 사용자의 요구사항을 수집하기 위해 가장 흔하고 쉽게 사용하는 방법으로， 다양한 유형의 질문을 적재적소에 시용해야 함 - 인터뷰 <br>
 
 **세로**
 1 수집된 요구사항을 분석해서 작성한 것으로， 사용자와 DB 개발자를 연결하는 문서 - 요구수집명세서
